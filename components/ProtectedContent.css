@@ -1,0 +1,100 @@
+/* src/components/ProtectedContent.css */
+
+.protected-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f4f8; /* Light background color */
+}
+
+.protected-iframe {
+    width: 100%;
+    height: 100%; /* Full height for iframe */
+    border: none; /* No border for iframe */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for iframe */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.overlay-container {
+    position: absolute;
+    bottom: 130px; /* Position at the bottom */
+    left: 5px; /* Position at the left */
+    z-index: 1000; /* Ensure it's above the iframe */
+    pointer-events: none; /* Allow clicks to pass through to the iframe */
+}
+
+.filter-section, .signout-container {
+    pointer-events: auto; /* Enable clicks on these elements */
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column; /* Arrange filter elements vertically */
+    gap: 10px; /* Space between elements */
+    margin-bottom: 40px; /* Space between filter and buttons */
+    align-items: flex-start; /* Align items to the left */
+}
+
+.filter-section label {
+    font-size: 1rem;
+    color: white; /* White text color */
+}
+
+.filter-section select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #36454F;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    color: #333; /* Dark text color for better readability */
+    width: 250px;
+    height: 40px;
+}
+
+.filter-button {
+    padding: 8px 10px;
+    background-color: transparent; /* No background color */
+    color: white; /* White text color */
+    border: 1px solid #dd841a; /* White border */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #dd841a ; /* White background on hover */
+    color: #5d455f; /* Dark text color on hover */
+}
+
+.signout-container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    gap: 10px; /* Space between buttons */
+    align-items: flex-start; /* Align buttons to the left */
+}
+
+.signout-button {
+    padding: 14px 89px;
+    background-color: transparent; /* No background color */
+    color: white; /* White text color */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.admin-button {
+    padding: 14px 76px;
+    background-color: transparent; /* No background color */
+    color: white; /* White text color */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signout-button:hover,
+.admin-button:hover {
+    background-color: #dd841a; /* White background on hover */
+    color: #5d455f; /* Dark text color on hover */
+}
