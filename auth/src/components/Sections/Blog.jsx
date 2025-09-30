@@ -64,7 +64,7 @@ Kwara, Nigeria."
                 action={() => alert("clicked")}
               />
             </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          {/*  <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <BlogBox
                 title="New Office!"
                 text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
@@ -80,8 +80,8 @@ Kwara, Nigeria."
                 tag="company"
                 author="Proposed Site"
                 action={() => alert("clicked")}
-              />
-            </div>
+              /> 
+            </div> */}
           </div>
           <div className="row flexCenter">
             <div style={{ margin: "50px 0", width: "200px" }}>
@@ -120,3 +120,4 @@ const HeaderInfo = styled.div`
     text-align: center;
   }
 `;
+
